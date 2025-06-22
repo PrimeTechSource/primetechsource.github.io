@@ -1,34 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    main {
-      padding: 20px;
-    }
-  </style>
-</head>
-<body>
-  
-<nav>
-  <ul style="list-style: none; display: flex; gap: 20px; padding: 10px; background: #333; color: white;">
-    <li><a href="/" style="color: white; text-decoration: none;">Home</a></li>
-    <li><a href="/about/" style="color: white; text-decoration: none;">About</a></li>
-    <li><a href="/services/" style="color: white; text-decoration: none;">Services</a></li>
-    <li><a href="/contact/" style="color: white; text-decoration: none;">Contact</a></li>
-  </ul>
-</nav>
-
-  <main>
+<!DOCTYPE html><html><head><title>Contact</title></head><body>
+<header style="background:#fff; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: space-between;">
+  <img src="/assets/logo.png" alt="PrimeTechSource Logo" style="height: 50px;">
+  <nav>
+    <a href="/" style="margin:0 15px; color: #333; text-decoration: none;">Home</a>
+    <a href="/about/" style="margin:0 15px; color: #333; text-decoration: none;">About</a>
+    <a href="/services/" style="margin:0 15px; color: #333; text-decoration: none;">Services</a>
+    <a href="/contact/" style="margin:0 15px; color: #333; text-decoration: none;">Contact</a>
+  </nav>
+</header>
+<main style='padding:40px;'>
     <h1>Contact Us</h1>
-    <p>Reach out to us for inquiries at info@primetechsource.com.</p>
-  </main>
-</body>
-</html>
+    <p>Send your inquiries to: <a href="mailto:info@primetechsource.com">info@primetechsource.com</a></p>
+    <form method="POST" action="https://formspree.io/f/your-form-id">
+      <input type="text" name="name" placeholder="Your Name" required><br><br>
+      <input type="email" name="email" placeholder="Your Email" required><br><br>
+      <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+    </main></body></html>
